@@ -173,6 +173,7 @@ expandAndCheckClassPath <- function(classpath=NULL,
                                                                    "commons-httpclient.*.jar",
                                                                    "httpclient.*.jar",
                                                                    "httpcore.*.jar",
+                                                                   "guava.*.jar",
                                                                    "log4j.*.jar",
                                                                    "slf4j-api.*.jar",
                                                                    "slf4j-log4j.*.jar")) {
@@ -262,7 +263,7 @@ src_impaladb <- function(dbname, host = "localhost", port = 21050L, user = "", p
 }
 
 #' @export
-brief_desc.src_impaladb <- function(x) {
+src_desc.src_impaladb <- function(x) {
   info <- x$info
   paste0("ImpalaDB ", "serverVersion: ", info$version, " [",  info$url, "]\n")
 }
@@ -451,7 +452,7 @@ tbl.src_impaladb <- function(src, from, ...) {
 }
 
 #' @export
-translate_env.src_impaladb <- function(x) {
+src_translate_env.src_impaladb <- function(x) {
   sql_variant(
     base_scalar,
     sql_translator(.parent = base_agg,
