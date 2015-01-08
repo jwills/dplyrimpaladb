@@ -18,13 +18,13 @@ Install RJDBC, devtools, and dplyr with:
 
     ```R
     install.packages(c("RJDBC", "devtools", "dplyr"))
-    ````
+    ```
 
 Now install dplyrimpaladb from github using devtools:
 
-    ```R
-    devtools::install_github("jwills/dplyrimpaladb")
-    ```
+```R
+devtools::install_github("jwills/dplyrimpaladb")
+```
 
 If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/jwills/dplyrimpaladb/issues).
 
