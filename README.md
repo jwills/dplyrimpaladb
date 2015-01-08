@@ -14,17 +14,15 @@ You should only need to install the impala and impala-shell packages, unless you
 
 Install RJDBC, devtools, and dplyr with:
 
-* the latest released version from CRAN with
-
-    ```R
-    install.packages(c("RJDBC", "devtools", "dplyr"))
-    ````
+```R
+install.packages(c("RJDBC", "devtools", "dplyr"))
+````
 
 Now install dplyrimpaladb from github using devtools:
 
-    ```R
-    devtools::install_github("jwills/dplyrimpaladb")
-    ```
+```R
+devtools::install_github("jwills/dplyrimpaladb")
+```
 
 If you encounter a clear bug, please file a minimal reproducible example on [github](https://github.com/jwills/dplyrimpaladb/issues).
 
